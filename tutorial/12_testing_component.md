@@ -6,7 +6,7 @@
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { Router } from '@angular/router';
-import { of } from 'rxjs';
+import { of, Subscription } from 'rxjs';
 import { CustomerService } from '../customer.service';
 import { CustomerListComponent } from './customer-list.component';
 

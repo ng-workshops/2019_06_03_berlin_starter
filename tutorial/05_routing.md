@@ -55,8 +55,8 @@ import { CustomerComponent } from './customer/customer.component';
 
 const routes: Routes = [
   { path: 'customers', component: CustomerComponent },
-  { path: 'customers/new', component: CustomerFormComponent },
-  { path: 'customers/:id', component: CustomerFormComponent }
+  { path: 'customers/:id', component: CustomerFormComponent },
+  { path: 'customers/new', component: CustomerFormComponent }
 ];
 
 @NgModule({
@@ -97,6 +97,7 @@ export class CustomersModule {}
 <nav>
   <a routerLink="home" routerLinkActive="active">Home</a>
   <a routerLink="customers" routerLinkActive="active">Customers</a>
+  <a routerLink="customers/new" routerLinkActive="active">Add customer</a>
 </nav>
 
 <router-outlet></router-outlet>

@@ -22,11 +22,9 @@ export class CustomerStatusPipe implements PipeTransform {
 ## src/app/customers/customer/customer.component.html
 
 ```html
-<div class="header">
-  ...
+...
 
-  <span
-    ><mat-icon>{{customer?.numberOfOrders | customerStatus}}</mat-icon></span
-  >
-</div>
+<!-- header -->
+
+<span><mat-icon>{{customer?.numberOfOrders | customerStatus}}</mat-icon></span>
 ```

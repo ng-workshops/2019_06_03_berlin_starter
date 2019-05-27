@@ -204,6 +204,8 @@ delete(id: number) {
 ```html
 ...
 
+<!-- footer -->
+
 <button mat-icon-button (click)="delete(customer?.id)">
   <mat-icon>delete</mat-icon>
 </button>

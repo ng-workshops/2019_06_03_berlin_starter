@@ -35,7 +35,7 @@ export class InfoBoxComponent implements OnInit, OnChanges {
 
   ngOnInit() {}
 
-  ngOnChanges(changes: { [propKey: string]: SimpleChange }) {
+  ngOnChanges(changes: Record<string, SimpleChange>) {
     if (changes.message) {
       console.log('changes.message', changes.message.currentValue);
     }

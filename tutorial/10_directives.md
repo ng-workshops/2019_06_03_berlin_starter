@@ -2,7 +2,7 @@
 
 > ng generate module shared --module app
 
-> ng generate directive shared/directives/can-click
+> ng generate directive shared/directives1/can-click --export
 
 ## src/app/shared/directives/can-click.directive.ts
 
@@ -49,16 +49,28 @@ export class CanClickDirective implements OnInit {
 }
 ```
 
-// Todo
+## src/app/customers/customers.module.ts
+
+```ts
+@NgModule({
+  imports: [
+    ...
+    SharedModule,
+    ...
+  ],
+})
+export class CustomersModule {}
+```
 
 ## src/app/customers/customer/customer.component.html
 
 ```html
-<div class="header">
-  ...
+...
 
-  <span
-    ><mat-icon>{{customer?.numberOfOrders | customerStatus}}</mat-icon></span
-  >
+<div class="footer">
+  ...
+  <button appCanClick mat-icon-button (canClick)="delete(customer?.id)">
+    <mat-icon>delete</mat-icon>
+  </button>
 </div>
 ```

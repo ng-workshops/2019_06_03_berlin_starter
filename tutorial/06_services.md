@@ -57,7 +57,6 @@ export class CustomerListComponent implements OnInit {
 ```html
 <div class="customer">
   <app-customer *ngFor="let customer of customers" [customer]="customer">
-    <app-customer-details></app-customer-details>
   </app-customer>
 </div>
 ```
@@ -66,6 +65,7 @@ export class CustomerListComponent implements OnInit {
 
 ```ts
 ...
+import { CustomerListComponent } from './customer-list/customer-list.component';
 
 const routes: Routes = [
   { path: 'customers', component: CustomerListComponent },

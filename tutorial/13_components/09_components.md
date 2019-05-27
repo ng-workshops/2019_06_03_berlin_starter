@@ -50,3 +50,33 @@
 
 <pre>Message from Child = {{ reply | json }}</pre>
 ```
+
+## src/app/customers/customer/customer.component.html
+
+```html
+...
+
+<div class="details" *ngIf="showDetails">
+  <ng-content></ng-content>
+</div>
+
+...
+```
+
+## src/app/customers/customer-list/customer-list.component.html
+
+```html
+...
+
+<div class="customer">
+  <app-customer
+    *ngFor="let customer of customers$ | async"
+    [customer]="customer"
+    (deleteCustomer)="deleteCustomer($event)"
+  >
+    <app-customer-details></app-customer-details>
+  </app-customer>
+</div>
+
+...
+```

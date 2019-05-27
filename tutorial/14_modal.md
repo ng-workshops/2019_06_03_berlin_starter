@@ -106,7 +106,7 @@ export class ModalService {
 
 ## shared/module.ts
 
-Add MatCardModule, MatButtonModule, ModalComponent
+Add MatCardModule, MatButtonModule to imports
 Add ModalComponent in entry components
 
 ## home/home.component.html

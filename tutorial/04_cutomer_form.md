@@ -92,7 +92,7 @@ export class CustomerFormComponent implements OnInit {
 ## src/app/customers/customer-form/customer-form.component.html
 
 ```html
-<h1>Edit customer</h1>
+<h1>{{ form.get('id').value ? 'Edit' : 'Add' }} customer</h1>
 
 <form novalidate [formGroup]="form" (ngSubmit)="submit()">
   <div class="form-row">
