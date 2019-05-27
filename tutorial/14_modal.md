@@ -1,4 +1,4 @@
-# 10 Component - Dynamic Modal
+# 14 Dynamic Modal
 
 > ng generate component shared/modal --module shared
 

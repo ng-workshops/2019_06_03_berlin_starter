@@ -1,23 +1,55 @@
-# Pipes
+# Directives
 
-> ng generate pipe customers/customer-status
+> ng generate module shared --module app
 
-## src/app/customers/customer-status.pipe.ts
+> ng generate directive shared/directives/can-click
+
+## src/app/shared/directives/can-click.directive.ts
 
 ```ts
-import { Pipe, PipeTransform } from '@angular/core';
+import {
+  Directive,
+  ElementRef,
+  EventEmitter,
+  HostBinding,
+  HostListener,
+  OnInit,
+  Output,
+  Renderer2
+} from '@angular/core';
 
-@Pipe({ name: 'customerStatus' })
-export class CustomerStatusPipe implements PipeTransform {
-  transform(value: number): string {
-    if (!value) {
-      return 'thumb_down';
+@Directive({
+  selector: '[appCanClick]'
+})
+export class CanClickDirective implements OnInit {
+  @HostBinding('class.app-disabled') isDisabled = true;
+
+  @Output() canClick = new EventEmitter();
+
+  constructor(private element: ElementRef, private renderer: Renderer2) {}
+
+  @HostListener('click', ['$event']) onClick(e: MouseEvent) {
+    if (this.isDisabled) {
+      e.preventDefault();
+      e.stopPropagation();
+      return;
     }
 
-    return value > 50 ? 'star_rate' : 'thumb_up';
+    this.canClick.emit(e);
+  }
+
+  ngOnInit() {
+    this.isDisabled = true;
+    this.renderer.setProperty(
+      this.element.nativeElement,
+      'title',
+      'Im Demo-Modus nicht verfügbar'
+    );
   }
 }
 ```
+
+// Todo
 
 ## src/app/customers/customer/customer.component.html
 
