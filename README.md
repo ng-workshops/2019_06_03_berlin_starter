@@ -44,6 +44,7 @@ Dokumentation of the all the Angular CLI commands and addional information of co
 Offical code styleguide from the Angular team.
 
 https://angular.io/guide/styleguide
+https://angular-checklist.io/projects
 
 ### Create you own Angular lib
 
