@@ -2,7 +2,7 @@
 
 > ng generate module shared --module app
 
-> ng generate directive shared/directives1/can-click --export
+> ng generate directive shared/directives/can-click --export
 
 ## src/app/shared/directives/can-click.directive.ts
 

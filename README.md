@@ -83,6 +83,13 @@ A toolkit based on the Angular cli to support the writing of large scale enterpr
 
 https://nrwl.io/nx
 
+### Internationalization
+
+- [Angular i18n](https://angular.io/guide/i18n) The build in solution for internationalization from Angular
+- [NGX-Translate](http://www.ngx-translate.com) A more dynamic approach for internationalization from the community
+- [POEditor](https://poeditor.com) Online localization management platform
+- [BabelEdit](https://www.codeandweb.com/babeledit) Translation editor spezialized for web apps
+
 ### Tools
 
 - [Augury](https://augury.angular.io) Chrome Extension for debugging and profiling Angular apps
