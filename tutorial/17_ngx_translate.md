@@ -157,3 +157,21 @@ export class Impressum2Component {
   }
 }
 ```
+
+## src/app/app.component.ts
+
+```ts
+...
+
+constructor(
+    hostElementService: HostElementService,
+    hostElement: ViewContainerRef,
+    translate: TranslateService
+  ) {
+    hostElementService.setHost(hostElement);
+    translate.setDefaultLang('en');
+    translate.use('de')
+  }
+
+...
+```
