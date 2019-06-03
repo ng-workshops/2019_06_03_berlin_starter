@@ -103,6 +103,14 @@ https://nrwl.io/nx
 - https://blog.angular-university.io/angular-jwt-authentication/
 - https://blogs.msdn.microsoft.com/premier_developer/2018/03/07/angular-how-to-implement-role-based-security/
 
+### NPM
+
+- [npm audit](https://docs.npmjs.com/cli/audit) Build in security check for node modules
+- [snyk](https://snyk.io) Dependency vulnerabilities management
+- 7 Tools to Scan Node.js Application for Security Vulnerability https://geekflare.com/nodejs-security-scanner/
+- [license-checker](https://github.com/davglass/license-checker) List licenses of all node modules in the project
+- [npm-check-updates](https://github.com/tjunnone/npm-check-updates) Check all dependencies for updates
+
 ### Recommended high quality blogs
 
 - https://blog.angular.io
