@@ -54,7 +54,9 @@ https://github.com/angular/angular-cli/wiki/stories-create-library
 
 ### RxJS
 
-https://www.learnrxjs.io
+- https://www.learnrxjs.io
+- [When to unsubscribe in Angular](https://netbasal.com/when-to-unsubscribe-in-angular-d61c6b21bad3)
+- [Rxjs marbles](https://rxmarbles.com/) Marble diagrams for rxjs operators
 
 ### Vs Code
 
@@ -113,6 +115,7 @@ https://nrwl.io/nx
 
 ### Recommended high quality blogs
 
+- https://egghead.io/
 - https://blog.angular.io
 - https://blog.thoughtram.io
 - https://blog.angularindepth.com
