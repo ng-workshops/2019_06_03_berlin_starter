@@ -79,6 +79,7 @@ Opinionated code styling tool. Works for many languages and will help you to no 
 Blog article how you can use the [Jest](https://facebook.github.io/jest/) testing framework with Angular. Replaces the karma runner and is much faster. Also includes some nice features like [Snapshot Testing](https://facebook.github.io/jest/docs/en/snapshot-testing.html).
 
 https://www.xfive.co/blog/testing-angular-faster-jest/
+https://github.com/briebug/jest-schematic Schematic that adds all the code necessary for jest and removes karma from the project
 
 ### Nrwl Extensions for Angular
 
