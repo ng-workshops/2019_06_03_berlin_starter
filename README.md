@@ -107,6 +107,11 @@ https://nrwl.io/nx
 - https://blog.angular-university.io/angular-jwt-authentication/
 - https://blogs.msdn.microsoft.com/premier_developer/2018/03/07/angular-how-to-implement-role-based-security/
 
+### Recursion of Components
+
+- https://netbasal.com/recursion-in-angular-components-1cd636269b12
+- https://www.bennadel.com/blog/3513-playing-with-recursive-components-in-angular-6-1-10.htm
+
 ### NPM
 
 - [npm audit](https://docs.npmjs.com/cli/audit) Build in security check for node modules
