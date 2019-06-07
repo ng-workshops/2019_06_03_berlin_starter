@@ -32,6 +32,11 @@ import {
 } from '@angular/core';
 import { HostElementService } from './shared/modal/host/host-element.service';
 
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
 export class AppComponent implements OnInit {
   constructor(
     hostElementService: HostElementService,

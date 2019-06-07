@@ -36,8 +36,9 @@ export const routes: Routes = [
 
 ```ts
 // import ngx-translate and the http loader
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateLoader, TranslateModule, TranslateCompiler } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateMessageFormatCompiler } from 'ngx-translate-messageformat-compiler';
 
 @NgModule({
   imports: [
@@ -47,6 +48,11 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
+      },
+      // compiler configuration
+      compiler: {
+        provide: TranslateCompiler,
+        useClass: TranslateMessageFormatCompiler
       }
     })
   ],
