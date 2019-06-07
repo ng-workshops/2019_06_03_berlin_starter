@@ -90,6 +90,7 @@ https://nrwl.io/nx
 
 - [Angular i18n](https://angular.io/guide/i18n) The build in solution for internationalization from Angular
 - [NGX-Translate](http://www.ngx-translate.com) A more dynamic approach for internationalization from the community
+- [ngx-translate-extract](https://github.com/biesbjerg/ngx-translate-extract) Extracts localizations keys from the app and saves them in json files for each language
 - [POEditor](https://poeditor.com) Online localization management platform
 - [BabelEdit](https://www.codeandweb.com/babeledit) Translation editor spezialized for web apps
 
@@ -115,6 +116,8 @@ https://nrwl.io/nx
 
 ### Recommended high quality blogs
 
+- https://angular.de
+- https://angular.de/slack (Deutscher Angular Slack channel)
 - https://egghead.io/
 - https://blog.angular.io
 - https://blog.thoughtram.io
